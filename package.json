@@ -1,0 +1,18 @@
+{
+  "name": "gounder-and-co",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Gounder & Co. — Premium Furniture & Home Appliances Showroom Website",
+  "private": true,
+  "scripts": {
+    "client": "node client/node_modules/vite/bin/vite.js client",
+    "client:build": "node client/node_modules/vite/bin/vite.js build client",
+    "server": "node server/server.js",
+    "server:dev": "node --watch server/server.js",
+    "install:all": "npm install --prefix client && npm install --prefix server",
+    "dev": "node run-dev.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

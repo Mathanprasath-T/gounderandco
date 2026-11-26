@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="wallBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0D0B8"/>
+      <stop offset="100%" style="stop-color:#C8B898"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C0A070"/>
+      <stop offset="100%" style="stop-color:#8B6B40"/>
+    </linearGradient>
+    <linearGradient id="tableTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A07040"/>
+      <stop offset="30%" style="stop-color:#8B5828"/>
+      <stop offset="70%" style="stop-color:#7A4820"/>
+      <stop offset="100%" style="stop-color:#6A3A18"/>
+    </linearGradient>
+    <linearGradient id="chairFabric" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B9E78"/>
+      <stop offset="100%" style="stop-color:#6B7E58"/>
+    </linearGradient>
+    <radialGradient id="chandGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" style="stop-color:#FFE090;stop-opacity:0.9"/>
+      <stop offset="60%" style="stop-color:#FFC840;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#FFC840;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#000;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#1A0D05;stop-opacity:0.7"/>
+    </radialGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#2A1500" flood-opacity="0.35"/>
+    </filter>
+    <filter id="blur6"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <!-- Wall -->
+  <rect width="1920" height="1080" fill="url(#wallBg)"/>
+  <!-- Accent wall behind table -->
+  <rect x="460" y="0" width="1000" height="800" fill="#4F3426" opacity="0.08"/>
+
+  <!-- Ceiling -->
+  <rect x="0" y="0" width="1920" height="200" fill="#EAE0CC"/>
+  <rect x="0" y="192" width="1920" height="12" fill="#D0C0A0"/>
+
+  <!-- Floor -->
+  <rect x="0" y="780" width="1920" height="300" fill="url(#floorGrad)"/>
+  <rect x="0" y="778" width="1920" height="6" fill="#B09060" opacity="0.8"/>
+  <!-- Floor planks -->
+  <line x1="0" y1="800" x2="1920" y2="800" stroke="#A07848" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="825" x2="1920" y2="825" stroke="#A07848" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="850" x2="1920" y2="850" stroke="#A07848" stroke-width="1.5" opacity="0.3"/>
+  <line x1="320" y1="780" x2="320" y2="1080" stroke="#A07848" stroke-width="1" opacity="0.3"/>
+  <line x1="640" y1="780" x2="640" y2="1080" stroke="#A07848" stroke-width="1" opacity="0.25"/>
+  <line x1="960" y1="780" x2="960" y2="1080" stroke="#A07848" stroke-width="1" opacity="0.3"/>
+  <line x1="1280" y1="780" x2="1280" y2="1080" stroke="#A07848" stroke-width="1" opacity="0.25"/>
+  <line x1="1600" y1="780" x2="1600" y2="1080" stroke="#A07848" stroke-width="1" opacity="0.3"/>
+
+  <!-- Wainscoting panels -->
+  <rect x="0" y="680" width="1920" height="104" fill="#D8C8A8" opacity="0.5"/>
+  <rect x="0" y="678" width="1920" height="6" fill="#C0A878"/>
+  <rect x="80" y="690" width="250" height="82" rx="4" fill="none" stroke="#C0A870" stroke-width="2" opacity="0.5"/>
+  <rect x="1590" y="690" width="250" height="82" rx="4" fill="none" stroke="#C0A870" stroke-width="2" opacity="0.5"/>
+
+  <!-- === CHANDELIER === -->
+  <!-- Ceiling mount -->
+  <rect x="930" y="195" width="60" height="20" rx="6" fill="#8B6030"/>
+  <!-- Chain / rod -->
+  <rect x="956" y="215" width="8" height="80" fill="#A07838"/>
+  <!-- Chandelier body -->
+  <ellipse cx="960" cy="310" rx="80" ry="22" fill="#B08840"/>
+  <rect x="890" y="296" width="140" height="30" rx="8" fill="#A07830"/>
+  <!-- Arms -->
+  <line x1="910" y1="308" x2="850" y2="338" stroke="#8B6020" stroke-width="6" stroke-linecap="round"/>
+  <line x1="1010" y1="308" x2="1070" y2="338" stroke="#8B6020" stroke-width="6" stroke-linecap="round"/>
+  <line x1="940" y1="308" x2="900" y2="346" stroke="#8B6020" stroke-width="5" stroke-linecap="round"/>
+  <line x1="980" y1="308" x2="1020" y2="346" stroke="#8B6020" stroke-width="5" stroke-linecap="round"/>
+  <line x1="960" y1="326" x2="960" y2="358" stroke="#8B6020" stroke-width="5"/>
+  <!-- Bulb globes -->
+  <circle cx="850" cy="346" r="14" fill="#FFE8A0" opacity="0.95"/>
+  <circle cx="1070" cy="346" r="14" fill="#FFE8A0" opacity="0.95"/>
+  <circle cx="900" cy="354" r="12" fill="#FFE8A0" opacity="0.9"/>
+  <circle cx="1020" cy="354" r="12" fill="#FFE8A0" opacity="0.9"/>
+  <circle cx="960" cy="362" r="13" fill="#FFE8A0" opacity="0.95"/>
+  <!-- Chandelier glow -->
+  <ellipse cx="960" cy="400" rx="300" ry="150" fill="url(#chandGlow)" filter="url(#blur6)"/>
+
+  <!-- === DINING TABLE (6 seater, solid wood) === -->
+  <!-- Table shadow -->
+  <ellipse cx="960" cy="810" rx="400" ry="30" fill="#2A1500" opacity="0.25" filter="url(#blur6)"/>
+  <!-- Table top -->
+  <rect x="500" y="590" width="920" height="220" rx="16" fill="url(#tableTop)" filter="url(#shadow)"/>
+  <!-- Table top highlight -->
+  <rect x="500" y="590" width="920" height="20" rx="12" fill="#C09050" opacity="0.4"/>
+  <!-- Table edge detail -->
+  <rect x="500" y="590" width="920" height="220" rx="16" fill="none" stroke="#6A3A18" stroke-width="4" opacity="0.4"/>
+  <!-- Wood grain lines -->
+  <line x1="520" y1="620" x2="1400" y2="620" stroke="#7A4820" stroke-width="1" opacity="0.3"/>
+  <line x1="520" y1="650" x2="1400" y2="650" stroke="#7A4820" stroke-width="1" opacity="0.25"/>
+  <line x1="520" y1="680" x2="1400" y2="680" stroke="#7A4820" stroke-width="1" opacity="0.3"/>
+  <line x1="520" y1="710" x2="1400" y2="710" stroke="#7A4820" stroke-width="1" opacity="0.25"/>
+  <line x1="520" y1="740" x2="1400" y2="740" stroke="#7A4820" stroke-width="1" opacity="0.3"/>
+  <!-- Table legs -->
+  <rect x="540" y="805" width="30" height="50" rx="6" fill="#6A3818"/>
+  <rect x="1350" y="805" width="30" height="50" rx="6" fill="#6A3818"/>
+  <rect x="680" y="808" width="20" height="45" rx="4" fill="#5A2E10"/>
+  <rect x="1220" y="808" width="20" height="45" rx="4" fill="#5A2E10"/>
+
+  <!-- === CHAIRS (6 total) — 2 each side + 1 each end === -->
+  <!-- Chair helper: back, seat, legs in sage green fabric -->
+
+  <!-- LEFT CHAIR 1 -->
+  <rect x="470" y="490" width="110" height="110" rx="10" fill="url(#chairFabric)" filter="url(#shadow)"/>
+  <rect x="470" y="488" width="110" height="16" rx="8" fill="#9EB888"/>
+  <rect x="484" y="596" width="82" height="80" rx="8" fill="#7A9068"/>
+  <rect x="488" y="672" width="16" height="30" rx="4" fill="#4A2E10"/>
+  <rect x="552" y="672" width="16" height="30" rx="4" fill="#4A2E10"/>
+
+  <!-- LEFT CHAIR 2 -->
+  <rect x="718" y="490" width="110" height="110" rx="10" fill="url(#chairFabric)" filter="url(#shadow)"/>
+  <rect x="718" y="488" width="110" height="16" rx="8" fill="#9EB888"/>
+  <rect x="732" y="596" width="82" height="80" rx="8" fill="#7A9068"/>
+  <rect x="736" y="672" width="16" height="30" rx="4" fill="#4A2E10"/>
+  <rect x="800" y="672" width="16" height="30" rx="4" fill="#4A2E10"/>
+
+  <!-- LEFT CHAIR 3 -->
+  <rect x="966" y="490" width="110" height="110" rx="10" fill="url(#chairFabric)" filter="url(#shadow)"/>
+  <rect x="966" y="488" width="110" height="16" rx="8" fill="#9EB888"/>
+  <rect x="980" y="596" width="82" height="80" rx="8" fill="#7A9068"/>
+  <rect x="984" y="672" width="16" height="30" rx="4" fill="#4A2E10"/>
+  <rect x="1048" y="672" width="16" height="30" rx="4" fill="#4A2E10"/>
+
+  <!-- RIGHT CHAIR 1 -->
+  <rect x="466" y="808" width="110" height="110" rx="10" fill="url(#chairFabric)" filter="url(#shadow)"/>
+  <rect x="466" y="808" width="110" height="16" rx="8" fill="#9EB888"/>
+  <rect x="480" y="822" width="82" height="80" rx="8" fill="#7A9068"/>
+
+  <!-- RIGHT CHAIR 2 -->
+  <rect x="714" y="808" width="110" height="110" rx="10" fill="url(#chairFabric)" filter="url(#shadow)"/>
+  <rect x="714" y="808" width="110" height="16" rx="8" fill="#9EB888"/>
+  <rect x="728" y="822" width="82" height="80" rx="8" fill="#7A9068"/>
+
+  <!-- RIGHT CHAIR 3 -->
+  <rect x="962" y="808" width="110" height="110" rx="10" fill="url(#chairFabric)" filter="url(#shadow)"/>
+  <rect x="962" y="808" width="110" height="16" rx="8" fill="#9EB888"/>
+  <rect x="976" y="822" width="82" height="80" rx="8" fill="#7A9068"/>
+
+  <!-- HEAD CHAIR (left end) -->
+  <rect x="348" y="626" width="92" height="102" rx="10" fill="url(#chairFabric)" filter="url(#shadow)"/>
+  <rect x="348" y="624" width="92" height="16" rx="8" fill="#9EB888"/>
+  <rect x="358" y="724" width="72" height="75" rx="8" fill="#7A9068"/>
+
+  <!-- FOOT CHAIR (right end) -->
+  <rect x="1480" y="626" width="92" height="102" rx="10" fill="url(#chairFabric)" filter="url(#shadow)"/>
+  <rect x="1480" y="624" width="92" height="16" rx="8" fill="#9EB888"/>
+  <rect x="1490" y="724" width="72" height="75" rx="8" fill="#7A9068"/>
+
+  <!-- === TABLE DECOR === -->
+  <!-- Table runner -->
+  <rect x="740" y="595" width="440" height="210" rx="4" fill="#CA6B14" opacity="0.15"/>
+  <rect x="746" y="600" width="428" height="200" rx="3" fill="none" stroke="#CA6B14" stroke-width="2" opacity="0.3"/>
+  <!-- Centre bowl / vase -->
+  <ellipse cx="960" cy="690" rx="40" ry="18" fill="#8B5A28" opacity="0.9"/>
+  <ellipse cx="960" cy="688" rx="38" ry="10" fill="#A07038"/>
+  <!-- Fruits in bowl -->
+  <circle cx="948" cy="683" r="10" fill="#CA6B14" opacity="0.9"/>
+  <circle cx="964" cy="680" r="11" fill="#E08030" opacity="0.85"/>
+  <circle cx="972" cy="685" r="9" fill="#A85020" opacity="0.8"/>
+  <!-- Candle holders -->
+  <rect x="860" y="655" width="14" height="40" rx="4" fill="#C8A040"/>
+  <ellipse cx="867" cy="655" rx="12" ry="5" fill="#E0B848"/>
+  <rect x="867" y="635" width="4" height="22" rx="2" fill="#FFF8E8"/>
+  <ellipse cx="869" cy="634" rx="5" ry="6" fill="#FFD060" opacity="0.8"/>
+  <rect x="1046" y="655" width="14" height="40" rx="4" fill="#C8A040"/>
+  <ellipse cx="1053" cy="655" rx="12" ry="5" fill="#E0B848"/>
+  <rect x="1053" y="635" width="4" height="22" rx="2" fill="#FFF8E8"/>
+  <ellipse cx="1055" cy="634" rx="5" ry="6" fill="#FFD060" opacity="0.8"/>
+  <!-- Wine glasses -->
+  <ellipse cx="800" cy="618" rx="12" ry="4" fill="#D8D0C8" opacity="0.6"/>
+  <rect x="808" y="618" width="4" height="30" fill="#C8C0B8" opacity="0.5"/>
+  <ellipse cx="810" cy="606" rx="16" ry="12" fill="#D0E8F0" opacity="0.4"/>
+  <ellipse cx="1120" cy="618" rx="12" ry="4" fill="#D8D0C8" opacity="0.6"/>
+  <rect x="1128" y="618" width="4" height="30" fill="#C8C0B8" opacity="0.5"/>
+  <ellipse cx="1130" cy="606" rx="16" ry="12" fill="#D0E8F0" opacity="0.4"/>
+
+  <!-- Wall art -->
+  <rect x="80" y="260" width="280" height="360" rx="6" fill="#4A3010" opacity="0.5"/>
+  <rect x="88" y="268" width="264" height="344" rx="4" fill="#E8D8C0"/>
+  <ellipse cx="220" cy="440" rx="90" ry="80" fill="#718C56" opacity="0.5"/>
+  <ellipse cx="200" cy="420" rx="60" ry="55" fill="#CA6B14" opacity="0.4"/>
+  <rect x="88" y="268" width="264" height="344" rx="4" fill="none" stroke="#8B6030" stroke-width="10"/>
+
+  <rect x="1552" y="280" width="260" height="340" rx="6" fill="#4A3010" opacity="0.5"/>
+  <rect x="1560" y="288" width="244" height="324" rx="4" fill="#E8D8C0"/>
+  <ellipse cx="1682" cy="450" rx="80" ry="70" fill="#4F3426" opacity="0.4"/>
+  <ellipse cx="1700" cy="430" rx="55" ry="50" fill="#718C56" opacity="0.35"/>
+  <rect x="1560" y="288" width="244" height="324" rx="4" fill="none" stroke="#8B6030" stroke-width="10"/>
+
+  <!-- Vignette -->
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#vignette)"/>
+  <!-- Bottom gradient for text -->
+  <rect x="0" y="700" width="1920" height="380" fill="#1A0D05" opacity="0.5"/>
+  <rect x="0" y="0" width="1920" height="180" fill="#1A0D05" opacity="0.3"/>
+</svg>
+

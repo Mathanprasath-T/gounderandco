@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="600" height="700">
+  <defs>
+    <linearGradient id="roomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F3EBDD"/>
+      <stop offset="100%" style="stop-color:#E0D4C0"/>
+    </linearGradient>
+    <linearGradient id="wallTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#EAE0D0"/>
+      <stop offset="100%" style="stop-color:#D8CCB8"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C4A882"/>
+      <stop offset="100%" style="stop-color:#9A7E5E"/>
+    </linearGradient>
+    <linearGradient id="woodMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B4E2A"/>
+      <stop offset="30%" style="stop-color:#8B5E35"/>
+      <stop offset="60%" style="stop-color:#6B3E1E"/>
+      <stop offset="100%" style="stop-color:#5A3015"/>
+    </linearGradient>
+    <linearGradient id="woodDark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4F3010"/>
+      <stop offset="50%" style="stop-color:#6B4020"/>
+      <stop offset="100%" style="stop-color:#4F3010"/>
+    </linearGradient>
+    <linearGradient id="woodPanel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B6B3A"/>
+      <stop offset="40%" style="stop-color:#7B4E2A"/>
+      <stop offset="100%" style="stop-color:#5A3015"/>
+    </linearGradient>
+    <linearGradient id="woodTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#A07040"/>
+      <stop offset="100%" style="stop-color:#6B4820"/>
+    </linearGradient>
+    <linearGradient id="mirrorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8E0F0;stop-opacity:0.7"/>
+      <stop offset="40%" style="stop-color:#E8F4FC;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#A0C8E0;stop-opacity:0.6"/>
+    </linearGradient>
+    <pattern id="woodGrain" x="0" y="0" width="40" height="200" patternUnits="userSpaceOnUse">
+      <rect width="40" height="200" fill="none"/>
+      <path d="M5,0 Q8,50 5,100 Q2,150 5,200" stroke="#5A3015" stroke-width="0.5" fill="none" opacity="0.4"/>
+      <path d="M15,0 Q12,60 16,120 Q20,160 15,200" stroke="#4A2810" stroke-width="0.5" fill="none" opacity="0.3"/>
+      <path d="M25,0 Q28,40 24,90 Q20,140 25,200" stroke="#5A3015" stroke-width="0.5" fill="none" opacity="0.4"/>
+      <path d="M35,0 Q32,70 36,130 Q40,170 35,200" stroke="#4A2810" stroke-width="0.3" fill="none" opacity="0.25"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-5%" width="130%" height="120%">
+      <feDropShadow dx="6" dy="12" stdDeviation="10" flood-color="#2A1500" flood-opacity="0.35"/>
+    </filter>
+    <filter id="innerShadow">
+      <feOffset dx="2" dy="2"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Room Background -->
+  <rect width="600" height="700" fill="url(#wallTop)"/>
+
+  <!-- Floor -->
+  <rect x="0" y="560" width="600" height="140" fill="url(#floorGrad)"/>
+  <rect x="0" y="558" width="600" height="5" fill="#B8956A" opacity="0.8"/>
+  <!-- Floor planks -->
+  <line x1="0" y1="575" x2="600" y2="575" stroke="#8A6A42" stroke-width="1" opacity="0.5"/>
+  <line x1="0" y1="592" x2="600" y2="592" stroke="#8A6A42" stroke-width="1" opacity="0.4"/>
+  <line x1="0" y1="609" x2="600" y2="609" stroke="#8A6A42" stroke-width="1" opacity="0.4"/>
+  <line x1="150" y1="560" x2="150" y2="700" stroke="#8A6A42" stroke-width="1" opacity="0.3"/>
+  <line x1="300" y1="560" x2="300" y2="700" stroke="#8A6A42" stroke-width="1" opacity="0.3"/>
+  <line x1="450" y1="560" x2="450" y2="700" stroke="#8A6A42" stroke-width="1" opacity="0.3"/>
+
+  <!-- Wardrobe shadow on floor -->
+  <ellipse cx="300" cy="568" rx="230" ry="18" fill="#2A1500" opacity="0.2"/>
+
+  <!-- ==== WOODEN WARDROBE ==== -->
+  <!-- Main body -->
+  <rect x="60" y="90" width="480" height="470" rx="6" fill="url(#woodMain)" filter="url(#shadow)"/>
+  <!-- Wood grain overlay -->
+  <rect x="60" y="90" width="480" height="470" rx="6" fill="url(#woodGrain)" opacity="0.6"/>
+
+  <!-- Top crown molding -->
+  <rect x="48" y="78" width="504" height="22" rx="5" fill="url(#woodTop)"/>
+  <rect x="52" y="82" width="496" height="6" rx="3" fill="#C09060" opacity="0.5"/>
+  <!-- Crown details -->
+  <rect x="60" y="84" width="480" height="4" fill="#A07840" opacity="0.4"/>
+
+  <!-- Bottom base molding -->
+  <rect x="48" y="556" width="504" height="16" rx="4" fill="url(#woodDark)"/>
+  <!-- Legs -->
+  <rect x="80" y="572" width="30" height="22" rx="4" fill="#4A2E10"/>
+  <rect x="490" y="572" width="30" height="22" rx="4" fill="#4A2E10"/>
+  <rect x="195" y="572" width="20" height="20" rx="3" fill="#4A2E10"/>
+  <rect x="385" y="572" width="20" height="20" rx="3" fill="#4A2E10"/>
+
+  <!-- Center divider -->
+  <rect x="296" y="94" width="8" height="458" fill="#4A2810"/>
+
+  <!-- === LEFT DOOR === -->
+  <!-- Door frame -->
+  <rect x="68" y="98" width="222" height="452" rx="4" fill="url(#woodPanel)"/>
+  <!-- Door inner recessed panel TOP -->
+  <rect x="84" y="114" width="190" height="190" rx="4" fill="#4F3015" opacity="0.5"/>
+  <rect x="88" y="118" width="182" height="182" rx="3" fill="url(#woodPanel)"/>
+  <!-- Panel shadow edges -->
+  <rect x="88" y="118" width="182" height="4" fill="#C09050" opacity="0.4"/>
+  <rect x="88" y="118" width="4" height="182" fill="#C09050" opacity="0.3"/>
+  <rect x="266" y="118" width="4" height="182" fill="#3A1A08" opacity="0.5"/>
+  <rect x="88" y="296" width="182" height="4" fill="#3A1A08" opacity="0.5"/>
+
+  <!-- Door inner recessed panel BOTTOM -->
+  <rect x="84" y="318" width="190" height="218" rx="4" fill="#4F3015" opacity="0.5"/>
+  <rect x="88" y="322" width="182" height="210" rx="3" fill="url(#woodPanel)"/>
+  <!-- Panel shadow edges bottom -->
+  <rect x="88" y="322" width="182" height="4" fill="#C09050" opacity="0.4"/>
+  <rect x="88" y="322" width="4" height="210" fill="#C09050" opacity="0.3"/>
+  <rect x="266" y="322" width="4" height="210" fill="#3A1A08" opacity="0.5"/>
+  <rect x="88" y="528" width="182" height="4" fill="#3A1A08" opacity="0.5"/>
+
+  <!-- Left door handle (brass) -->
+  <rect x="274" y="302" width="10" height="52" rx="5" fill="#C8A030"/>
+  <rect x="275" y="303" width="4" height="50" rx="3" fill="#E8C040" opacity="0.7"/>
+  <!-- Handle base plates -->
+  <rect x="272" y="298" width="14" height="10" rx="3" fill="#A88020"/>
+  <rect x="272" y="346" width="14" height="10" rx="3" fill="#A88020"/>
+
+  <!-- === RIGHT DOOR === -->
+  <!-- Door frame -->
+  <rect x="310" y="98" width="222" height="452" rx="4" fill="url(#woodPanel)"/>
+  <!-- Door inner recessed panel TOP with mirror -->
+  <rect x="318" y="114" width="206" height="190" rx="4" fill="#4F3015" opacity="0.5"/>
+  <rect x="322" y="118" width="198" height="182" rx="3" fill="url(#mirrorGrad)"/>
+  <!-- Mirror frame inner -->
+  <rect x="322" y="118" width="198" height="4" fill="#D0A060" opacity="0.6"/>
+  <rect x="322" y="118" width="4" height="182" fill="#D0A060" opacity="0.5"/>
+  <rect x="516" y="118" width="4" height="182" fill="#6A4020" opacity="0.4"/>
+  <rect x="322" y="296" width="198" height="4" fill="#6A4020" opacity="0.4"/>
+  <!-- Mirror shine -->
+  <rect x="326" y="122" width="30" height="174" rx="2" fill="white" opacity="0.08"/>
+  <line x1="326" y1="122" x2="516" y2="296" stroke="white" stroke-width="1" opacity="0.1"/>
+
+  <!-- Door inner recessed panel BOTTOM -->
+  <rect x="318" y="318" width="206" height="218" rx="4" fill="#4F3015" opacity="0.5"/>
+  <rect x="322" y="322" width="198" height="210" rx="3" fill="url(#woodPanel)"/>
+  <!-- Panel shadow edges -->
+  <rect x="322" y="322" width="198" height="4" fill="#C09050" opacity="0.4"/>
+  <rect x="322" y="322" width="4" height="210" fill="#C09050" opacity="0.3"/>
+  <rect x="516" y="322" width="4" height="210" fill="#3A1A08" opacity="0.5"/>
+  <rect x="322" y="528" width="198" height="4" fill="#3A1A08" opacity="0.5"/>
+
+  <!-- Right door handle (brass) -->
+  <rect x="316" y="302" width="10" height="52" rx="5" fill="#C8A030"/>
+  <rect x="317" y="303" width="4" height="50" rx="3" fill="#E8C040" opacity="0.7"/>
+  <!-- Handle base plates -->
+  <rect x="314" y="298" width="14" height="10" rx="3" fill="#A88020"/>
+  <rect x="314" y="346" width="14" height="10" rx="3" fill="#A88020"/>
+
+  <!-- Keyhole (left door) -->
+  <circle cx="262" cy="285" r="6" fill="#3A1A08"/>
+  <circle cx="262" cy="283" r="3.5" fill="#A88020"/>
+  <rect x="260" y="285" width="4" height="7" rx="1" fill="#A88020"/>
+
+  <!-- Keyhole (right door) -->
+  <circle cx="338" cy="285" r="6" fill="#3A1A08"/>
+  <circle cx="338" cy="283" r="3.5" fill="#A88020"/>
+  <rect x="336" y="285" width="4" height="7" rx="1" fill="#A88020"/>
+
+  <!-- Warm ambient light from top left -->
+  <ellipse cx="150" cy="90" rx="150" ry="80" fill="#FFA040" opacity="0.06"/>
+
+  <!-- Label band -->
+  <rect x="0" y="630" width="600" height="70" fill="#2C1A0A" opacity="0.75"/>
+  <text x="300" y="662" font-family="Georgia, serif" font-size="20" fill="#F3EBDD" text-anchor="middle" letter-spacing="4" font-weight="bold">SOLID WOODEN BERO</text>
+  <text x="300" y="685" font-family="Arial" font-size="11" fill="#CA6B14" text-anchor="middle" letter-spacing="5">TRADITIONAL CRAFTSMANSHIP</text>
+</svg>
+

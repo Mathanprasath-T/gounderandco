@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8A97A"/>
+      <stop offset="40%" style="stop-color:#E8C890"/>
+      <stop offset="80%" style="stop-color:#F5DFB0"/>
+      <stop offset="100%" style="stop-color:#E8D4A0"/>
+    </linearGradient>
+    <linearGradient id="wallLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6B4A28"/>
+      <stop offset="100%" style="stop-color:#8B6035"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4B896"/>
+      <stop offset="100%" style="stop-color:#A88860"/>
+    </linearGradient>
+    <linearGradient id="ceilingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D8C0"/>
+      <stop offset="100%" style="stop-color:#D8C8A8"/>
+    </linearGradient>
+    <linearGradient id="sofaBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B9E78"/>
+      <stop offset="60%" style="stop-color:#6B7E58"/>
+      <stop offset="100%" style="stop-color:#5A6B48"/>
+    </linearGradient>
+    <linearGradient id="rugGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C8A060"/>
+      <stop offset="50%" style="stop-color:#E8C880"/>
+      <stop offset="100%" style="stop-color:#C8A060"/>
+    </linearGradient>
+    <linearGradient id="tableWood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5A28"/>
+      <stop offset="100%" style="stop-color:#6B3E18"/>
+    </linearGradient>
+    <linearGradient id="curtainGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B9E78;stop-opacity:0.9"/>
+      <stop offset="50%" style="stop-color:#A0B08A;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#8B9E78;stop-opacity:0.95"/>
+    </linearGradient>
+    <linearGradient id="sunlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8E8;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#FFF8E8;stop-opacity:0"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD080;stop-opacity:0.8"/>
+      <stop offset="60%" style="stop-color:#FFB840;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#FFB840;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="blur4">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <filter id="blur8">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#2A1500" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- === BACKGROUND: Warm sunlit living room interior === -->
+
+  <!-- Ceiling -->
+  <rect x="0" y="0" width="1920" height="260" fill="url(#ceilingGrad)"/>
+  <!-- Crown molding -->
+  <rect x="0" y="250" width="1920" height="18" fill="#C8B090" rx="2"/>
+  <rect x="0" y="260" width="1920" height="6" fill="#D8C0A0" rx="1"/>
+
+  <!-- Back wall (warm ivory/beige) -->
+  <rect x="0" y="260" width="1920" height="680" fill="#E8D8C0"/>
+  <!-- Wall panels / wainscoting -->
+  <rect x="80" y="290" width="420" height="400" rx="6" fill="none" stroke="#C8B890" stroke-width="2.5" opacity="0.6"/>
+  <rect x="90" y="300" width="400" height="380" rx="4" fill="none" stroke="#C8B890" stroke-width="1" opacity="0.4"/>
+  <rect x="1420" y="290" width="420" height="400" rx="6" fill="none" stroke="#C8B890" stroke-width="2.5" opacity="0.6"/>
+  <rect x="1430" y="300" width="400" height="380" rx="4" fill="none" stroke="#C8B890" stroke-width="1" opacity="0.4"/>
+
+  <!-- Floor -->
+  <rect x="0" y="760" width="1920" height="320" fill="url(#floorGrad)"/>
+  <rect x="0" y="758" width="1920" height="6" fill="#C4A878" opacity="0.7"/>
+  <!-- Hardwood floor planks -->
+  <line x1="0" y1="790" x2="1920" y2="790" stroke="#B89868" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="822" x2="1920" y2="822" stroke="#B89868" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="854" x2="1920" y2="854" stroke="#B89868" stroke-width="1.5" opacity="0.4"/>
+  <line x1="0" y1="886" x2="1920" y2="886" stroke="#B89868" stroke-width="1.5" opacity="0.4"/>
+  <line x1="320" y1="760" x2="320" y2="1080" stroke="#B89868" stroke-width="1" opacity="0.3"/>
+  <line x1="640" y1="760" x2="640" y2="1080" stroke="#B89868" stroke-width="1" opacity="0.3"/>
+  <line x1="960" y1="760" x2="960" y2="1080" stroke="#B89868" stroke-width="1" opacity="0.3"/>
+  <line x1="1280" y1="760" x2="1280" y2="1080" stroke="#B89868" stroke-width="1" opacity="0.3"/>
+  <line x1="1600" y1="760" x2="1600" y2="1080" stroke="#B89868" stroke-width="1" opacity="0.3"/>
+
+  <!-- === LARGE WINDOW (back centre, sunlight pouring in) === -->
+  <!-- Window frame -->
+  <rect x="740" y="290" width="440" height="460" rx="4" fill="#2A1800" opacity="0.08"/>
+  <rect x="748" y="298" width="424" height="444" rx="2" fill="url(#skyGrad)"/>
+  <!-- Window panes -->
+  <line x1="960" y1="298" x2="960" y2="742" stroke="#D0C0A0" stroke-width="8"/>
+  <line x1="748" y1="520" x2="1172" y2="520" stroke="#D0C0A0" stroke-width="8"/>
+  <!-- Window frame border -->
+  <rect x="740" y="290" width="440" height="460" rx="4" fill="none" stroke="#C8B090" stroke-width="12"/>
+  <!-- Sunlight shaft from window -->
+  <polygon points="748,742 1172,742 1300,1080 600,1080" fill="url(#sunlight)" opacity="0.4"/>
+  <!-- Window sill -->
+  <rect x="720" y="748" width="480" height="18" rx="3" fill="#D8C8A0"/>
+
+  <!-- === LEFT CURTAIN === -->
+  <path d="M660,268 Q690,350 680,450 Q670,550 690,650 Q700,720 685,760 L748,760 L748,268 Z" fill="url(#curtainGrad)"/>
+  <path d="M680,268 Q710,370 695,470 Q685,560 700,650 Q710,720 695,760" stroke="#718C56" stroke-width="2" fill="none" opacity="0.4"/>
+
+  <!-- === RIGHT CURTAIN === -->
+  <path d="M1260,268 Q1230,350 1240,450 Q1250,550 1230,650 Q1220,720 1235,760 L1172,760 L1172,268 Z" fill="url(#curtainGrad)"/>
+  <path d="M1240,268 Q1210,370 1225,470 Q1235,560 1220,650 Q1210,720 1225,760" stroke="#718C56" stroke-width="2" fill="none" opacity="0.4"/>
+  <!-- Curtain rod -->
+  <rect x="640" y="262" width="640" height="12" rx="6" fill="#8B6030"/>
+  <circle cx="640" cy="268" r="10" fill="#A07838"/>
+  <circle cx="1280" cy="268" r="10" fill="#A07838"/>
+
+  <!-- === AREA RUG === -->
+  <ellipse cx="960" cy="880" rx="560" ry="90" fill="url(#rugGrad)" opacity="0.85"/>
+  <!-- Rug border pattern -->
+  <ellipse cx="960" cy="880" rx="550" ry="82" fill="none" stroke="#C09050" stroke-width="4" opacity="0.5"/>
+  <ellipse cx="960" cy="880" rx="530" ry="72" fill="none" stroke="#E8C870" stroke-width="2" opacity="0.4"/>
+
+  <!-- === SOFA (3-seater, left of centre) === -->
+  <!-- Sofa shadow -->
+  <ellipse cx="800" cy="800" rx="300" ry="25" fill="#2A1500" opacity="0.2" filter="url(#blur4)"/>
+  <!-- Sofa base frame -->
+  <rect x="460" y="690" width="680" height="110" rx="12" fill="#5A6B48"/>
+  <!-- Sofa back -->
+  <rect x="468" y="560" width="664" height="145" rx="14" fill="url(#sofaBody)" filter="url(#shadow)"/>
+  <!-- Sofa back top -->
+  <rect x="468" y="558" width="664" height="20" rx="10" fill="#9EB88A"/>
+  <!-- Sofa seats (3 cushions) -->
+  <rect x="478" y="635" width="204" height="68" rx="10" fill="#8B9E78"/>
+  <rect x="694" y="635" width="204" height="68" rx="10" fill="#96A880"/>
+  <rect x="910" y="635" width="204" height="68" rx="10" fill="#8B9E78"/>
+  <!-- Cushion seams -->
+  <line x1="478" y1="665" x2="682" y2="665" stroke="#718C56" stroke-width="1.5" opacity="0.5"/>
+  <line x1="694" y1="665" x2="898" y2="665" stroke="#6B8C58" stroke-width="1.5" opacity="0.5"/>
+  <line x1="910" y1="665" x2="1114" y2="665" stroke="#718C56" stroke-width="1.5" opacity="0.5"/>
+  <!-- Sofa arms -->
+  <rect x="460" y="580" width="52" height="210" rx="10" fill="#6B8058" filter="url(#shadow)"/>
+  <rect x="1088" y="580" width="52" height="210" rx="10" fill="#6B8058" filter="url(#shadow)"/>
+  <!-- Arm tops -->
+  <rect x="456" y="568" width="60" height="18" rx="6" fill="#7A9268"/>
+  <rect x="1084" y="568" width="60" height="18" rx="6" fill="#7A9268"/>
+  <!-- Sofa legs -->
+  <rect x="478" y="798" width="22" height="20" rx="4" fill="#4A2E10"/>
+  <rect x="680" y="798" width="22" height="20" rx="4" fill="#4A2E10"/>
+  <rect x="900" y="798" width="22" height="20" rx="4" fill="#4A2E10"/>
+  <rect x="1098" y="798" width="22" height="20" rx="4" fill="#4A2E10"/>
+
+  <!-- === THROW PILLOWS on sofa === -->
+  <rect x="510" y="590" width="80" height="80" rx="8" fill="#CA6B14" opacity="0.9" transform="rotate(-5, 550, 630)"/>
+  <rect x="514" y="594" width="72" height="72" rx="6" fill="none" stroke="#E08030" stroke-width="1.5" opacity="0.5"/>
+  <rect x="1020" y="592" width="78" height="78" rx="8" fill="#F3EBDD" opacity="0.95" transform="rotate(4, 1059, 631)"/>
+  <rect x="1024" y="596" width="70" height="70" rx="6" fill="none" stroke="#C8B090" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- === COFFEE TABLE === -->
+  <!-- Table shadow -->
+  <ellipse cx="960" cy="830" rx="200" ry="18" fill="#2A1500" opacity="0.25" filter="url(#blur4)"/>
+  <!-- Glass table top -->
+  <rect x="760" y="770" width="400" height="50" rx="6" fill="#D8D0C8" opacity="0.7"/>
+  <rect x="762" y="772" width="396" height="46" rx="5" fill="white" opacity="0.15"/>
+  <!-- Table frame -->
+  <rect x="768" y="816" width="384" height="10" rx="3" fill="url(#tableWood)"/>
+  <!-- Table legs -->
+  <rect x="790" y="818" width="16" height="40" rx="4" fill="#6B3E18"/>
+  <rect x="1114" y="818" width="16" height="40" rx="4" fill="#6B3E18"/>
+  <rect x="830" y="822" width="260" height="8" rx="4" fill="#5A3010" opacity="0.7"/>
+
+  <!-- Items on table -->
+  <!-- Vase -->
+  <rect x="930" y="745" width="20" height="28" rx="8" fill="#718C56" opacity="0.9"/>
+  <rect x="928" y="743" width="24" height="6" rx="3" fill="#8A9E6A"/>
+  <!-- Plant in vase -->
+  <ellipse cx="940" cy="745" rx="18" ry="12" fill="#5A7A44" opacity="0.8"/>
+  <ellipse cx="940" cy="738" rx="14" ry="10" fill="#6B8A50" opacity="0.7"/>
+  <!-- Book -->
+  <rect x="980" y="762" width="50" height="10" rx="2" fill="#CA6B14" opacity="0.8"/>
+  <rect x="980" y="752" width="48" height="10" rx="2" fill="#A05010" opacity="0.7"/>
+
+  <!-- === FLOOR LAMP (right side) === -->
+  <!-- Lamp glow -->
+  <ellipse cx="1500" cy="480" rx="120" ry="120" fill="url(#lampGlow)" filter="url(#blur8)"/>
+  <!-- Lamp base -->
+  <rect x="1488" y="760" width="24" height="40" rx="6" fill="#8B5A28"/>
+  <ellipse cx="1500" cy="800" rx="40" ry="10" fill="#6B3E18"/>
+  <!-- Lamp pole -->
+  <rect x="1497" y="490" width="6" height="275" rx="3" fill="#A07030"/>
+  <!-- Lamp shade -->
+  <path d="M1440,490 Q1500,460 1560,490 L1540,560 Q1500,575 1460,560 Z" fill="#F3EBDD" opacity="0.95"/>
+  <path d="M1440,490 Q1500,460 1560,490" stroke="#D8C8A0" stroke-width="3" fill="none"/>
+  <!-- Lamp light emission -->
+  <ellipse cx="1500" cy="560" rx="80" ry="40" fill="#FFD060" opacity="0.12"/>
+
+  <!-- === SIDE TABLE (right of sofa) === -->
+  <rect x="1150" y="700" width="130" height="12" rx="4" fill="#8B5A28"/>
+  <rect x="1160" y="712" width="110" height="85" rx="4" fill="none" stroke="#6B3E18" stroke-width="8"/>
+  <rect x="1163" y="793" width="104" height="8" rx="3" fill="#6B3E18"/>
+
+  <!-- === ARTWORK on wall (left of window) === -->
+  <rect x="145" y="300" width="310" height="240" rx="4" fill="#4A3010" opacity="0.6"/>
+  <rect x="152" y="307" width="296" height="226" rx="2" fill="#D8C8B0"/>
+  <!-- Abstract painting -->
+  <ellipse cx="300" cy="420" rx="80" ry="70" fill="#718C56" opacity="0.7"/>
+  <ellipse cx="260" cy="400" rx="50" ry="40" fill="#CA6B14" opacity="0.6"/>
+  <ellipse cx="340" cy="440" rx="45" ry="35" fill="#4F3426" opacity="0.5"/>
+  <rect x="152" y="307" width="296" height="226" rx="2" fill="none" stroke="#8B6030" stroke-width="10"/>
+
+  <!-- === POTTED PLANT (left side) === -->
+  <!-- Pot -->
+  <path d="M120,780 Q110,780 112,820 L148,820 Q150,780 140,780 Z" fill="#8B5A28"/>
+  <rect x="108" y="776" width="44" height="8" rx="3" fill="#A07038"/>
+  <!-- Plant leaves -->
+  <ellipse cx="130" cy="740" rx="35" ry="50" fill="#5A7A44" opacity="0.85"/>
+  <ellipse cx="108" cy="755" rx="25" ry="38" fill="#4A6A38" opacity="0.75"/>
+  <ellipse cx="152" cy="750" rx="28" ry="42" fill="#6B8A50" opacity="0.8"/>
+  <ellipse cx="130" cy="720" rx="20" ry="30" fill="#718C56" opacity="0.7"/>
+
+  <!-- === AMBIENT LIGHT overlays === -->
+  <!-- Warm sunlight wash from window -->
+  <rect x="748" y="742" width="424" height="338" fill="#FFE8A0" opacity="0.08"/>
+  <!-- Warm floor glow under window -->
+  <ellipse cx="960" cy="900" rx="300" ry="80" fill="#FFD870" opacity="0.06"/>
+
+  <!-- === VIGNETTE (cinematic dark edges) === -->
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#1A0D05;stop-opacity:0.65"/>
+    </radialGradient>
+  </defs>
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#vignette)"/>
+
+  <!-- Bottom dark gradient for text legibility -->
+  <rect x="0" y="680" width="1920" height="400" fill="#291A0A" opacity="0.45"/>
+  <!-- Top gradient -->
+  <rect x="0" y="0" width="1920" height="200" fill="#1A0D05" opacity="0.35"/>
+</svg>
+

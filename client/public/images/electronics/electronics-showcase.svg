@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="roomBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C1810;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#1A1008;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D0806;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3D2B1F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A0F0A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B6F4E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A3728;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tvBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tvScreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a2a4a;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#0d3b6b;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#1a5490;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a2a4a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fridgeBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C0C0C0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E8E8E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B0B0B0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glow" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A9FD4;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4A9FD4;stop-opacity:0" />
+    </linearGradient>
+    <radialGradient id="tvGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4A9FD4;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#4A9FD4;stop-opacity:0" />
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="8" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="tvGlowFilter">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background room -->
+  <rect width="800" height="500" fill="url(#wallGrad)"/>
+
+  <!-- Floor -->
+  <rect x="0" y="380" width="800" height="120" fill="url(#floorGrad)"/>
+  <rect x="0" y="378" width="800" height="4" fill="#A0825A" opacity="0.6"/>
+
+  <!-- Floor planks texture -->
+  <line x1="0" y1="395" x2="800" y2="395" stroke="#6B5035" stroke-width="1" opacity="0.4"/>
+  <line x1="0" y1="412" x2="800" y2="412" stroke="#6B5035" stroke-width="1" opacity="0.4"/>
+  <line x1="0" y1="429" x2="800" y2="429" stroke="#6B5035" stroke-width="1" opacity="0.4"/>
+  <line x1="0" y1="446" x2="800" y2="446" stroke="#6B5035" stroke-width="1" opacity="0.4"/>
+  <line x1="200" y1="380" x2="200" y2="500" stroke="#6B5035" stroke-width="1" opacity="0.3"/>
+  <line x1="400" y1="380" x2="400" y2="500" stroke="#6B5035" stroke-width="1" opacity="0.3"/>
+  <line x1="600" y1="380" x2="600" y2="500" stroke="#6B5035" stroke-width="1" opacity="0.3"/>
+
+  <!-- TV glow on wall -->
+  <ellipse cx="260" cy="300" rx="220" ry="150" fill="url(#tvGlow)"/>
+
+  <!-- TV unit / console table -->
+  <rect x="60" y="345" width="420" height="38" rx="4" fill="#1E1210" filter="url(#shadow)"/>
+  <rect x="60" y="343" width="420" height="6" rx="2" fill="#2A1A12"/>
+  <!-- Console legs -->
+  <rect x="80" y="383" width="12" height="18" rx="2" fill="#1A0E09"/>
+  <rect x="390" y="383" width="12" height="18" rx="2" fill="#1A0E09"/>
+
+  <!-- TELEVISION -->
+  <!-- TV outer bezel -->
+  <rect x="80" y="140" width="360" height="210" rx="8" fill="url(#tvBody)" filter="url(#shadow)"/>
+  <!-- Screen -->
+  <rect x="92" y="152" width="336" height="186" rx="4" fill="url(#tvScreen)"/>
+  <!-- Screen content - landscape scene -->
+  <rect x="92" y="152" width="336" height="186" rx="4" fill="#0d2a4a"/>
+  <!-- Mountains silhouette -->
+  <polygon points="92,290 150,210 200,250 250,190 300,230 336,200 428,290" fill="#0a1f38" opacity="0.8"/>
+  <!-- Sky gradient on screen -->
+  <rect x="92" y="152" width="336" height="90" rx="4" fill="#1a4a7a" opacity="0.5"/>
+  <!-- Stars -->
+  <circle cx="120" cy="170" r="1.5" fill="white" opacity="0.8"/>
+  <circle cx="180" cy="165" r="1" fill="white" opacity="0.6"/>
+  <circle cx="240" cy="175" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="310" cy="162" r="1" fill="white" opacity="0.8"/>
+  <circle cx="380" cy="168" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="400" cy="178" r="1" fill="white" opacity="0.7"/>
+  <!-- Screen reflection -->
+  <rect x="92" y="152" width="336" height="186" rx="4" fill="url(#glow)" opacity="0.4"/>
+  <!-- 4K badge -->
+  <rect x="380" y="156" width="36" height="16" rx="3" fill="#CA6B14" opacity="0.9"/>
+  <text x="398" y="168" font-family="Arial" font-size="9" font-weight="bold" fill="white" text-anchor="middle">4K</text>
+  <!-- Brand text on TV -->
+  <text x="260" y="325" font-family="Arial" font-size="10" fill="#888" text-anchor="middle" letter-spacing="3">SAMSUNG</text>
+  <!-- TV stand -->
+  <rect x="232" y="348" width="56" height="6" rx="2" fill="#111"/>
+  <!-- Screen bezel bottom indicator -->
+  <circle cx="260" cy="334" r="3" fill="#333"/>
+  <circle cx="260" cy="334" r="1.5" fill="#4A9FD4" opacity="0.8"/>
+
+  <!-- REFRIGERATOR -->
+  <!-- Fridge body -->
+  <rect x="530" y="160" width="175" height="222" rx="8" fill="url(#fridgeBody)" filter="url(#shadow)"/>
+  <!-- Fridge door seam (double door) -->
+  <line x1="617" y1="165" x2="617" y2="378" stroke="#999" stroke-width="2"/>
+  <!-- Door panels highlight -->
+  <rect x="533" y="163" width="81" height="215" rx="6" fill="#E0E0E0" opacity="0.5"/>
+  <rect x="618" y="163" width="84" height="215" rx="6" fill="#D0D0D0" opacity="0.3"/>
+  <!-- Left door handle -->
+  <rect x="606" y="250" width="6" height="50" rx="3" fill="#888"/>
+  <!-- Right door handle -->
+  <rect x="618" y="250" width="6" height="50" rx="3" fill="#888"/>
+  <!-- Fridge bottom section (freezer) -->
+  <line x1="533" y1="280" x2="702" y2="280" stroke="#AAA" stroke-width="1.5"/>
+  <!-- Fridge logo -->
+  <text x="617" y="210" font-family="Arial" font-size="11" fill="#718C56" text-anchor="middle" letter-spacing="2" font-weight="bold">LG</text>
+  <!-- Inverter badge -->
+  <rect x="556" y="350" width="55" height="14" rx="3" fill="#718C56" opacity="0.85"/>
+  <text x="583" y="361" font-family="Arial" font-size="7" fill="white" text-anchor="middle" font-weight="bold">INVERTER</text>
+  <!-- Fridge shine -->
+  <rect x="535" y="163" width="12" height="210" rx="4" fill="white" opacity="0.12"/>
+
+  <!-- Ambient light from TV on floor -->
+  <ellipse cx="260" cy="390" rx="140" ry="20" fill="#4A9FD4" opacity="0.07"/>
+
+  <!-- Brand label area -->
+  <rect x="0" y="440" width="800" height="60" fill="#000" opacity="0.5"/>
+  <text x="400" y="472" font-family="Georgia, serif" font-size="22" fill="#F3EBDD" text-anchor="middle" letter-spacing="4" font-weight="bold">SMART ELECTRONICS</text>
+  <text x="400" y="492" font-family="Arial" font-size="11" fill="#CA6B14" text-anchor="middle" letter-spacing="6">TV • REFRIGERATOR • WASHING MACHINE</text>
+</svg>
